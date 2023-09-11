@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik Mono One', sans-serif;
+    background-color: #050505;
+    color: #fff;
+}
+
+#left {
+    --glow-color: rgb(4, 0, 255);
+    text-shadow: 0 0 1em var(--glow-color);
+    flex: 1;
+    text-align: center;
+    font-size: 48px;
+}
+
+#right {
+    flex: 1;
+    text-align: center;
+}
+
+button {
+    --glow-color: rgb(255, 255, 255);
+    --glow-spread-color: rgb(4, 0, 255, 0.781);
+    --enhanced-glow-color: rgb(4, 0, 255);
+    --btn-color: rgba(4, 0, 255, 0.404);
+    border: .25em solid var(--glow-color);
+    height: 100px;
+    width: 200px;
+    margin: 60px;
+    color: var(--glow-color);
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Rubik Mono One', sans-serif;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+}
+
+button:hover {
+color: var(--btn-color);
+background-color: var(--glow-color);
+box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+}
+
+button:active {
+box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}
